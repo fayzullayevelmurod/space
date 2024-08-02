@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply font-Manrope text-base font-medium;
+}
+
+.container {
+  @apply max-w-[1200px] mx-auto;
+}
+
+.swiper-button-disabled {
+  opacity: .3;
+}
+
+@media only screen and (max-width: 1300px) {
+  .container {
+    @apply max-w-full px-[20px]
+  }
+}
+
+
