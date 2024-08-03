@@ -26,6 +26,16 @@ body {
   fill: white;
 }
 
+.link:hover > svg > path {
+  fill: #0059FD;
+}
+.link:focus > svg > path {
+  fill: #0059FD;
+}
+.link:active > svg > path {
+  fill: #0059FD;
+}
+
 /* .max-h-0 {
 	max-height: 0;
 }
