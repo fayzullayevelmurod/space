@@ -18,6 +18,14 @@ body {
   opacity: .3;
 }
 
+.tab:hover > svg > g > rect {
+  fill: white;
+}
+
+.tab:focus > svg > g > rect {
+  fill: white;
+}
+
 /* .max-h-0 {
 	max-height: 0;
 }
