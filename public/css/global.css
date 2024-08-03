@@ -36,6 +36,14 @@ body {
   margin: 0 !important;
 }
 
+.heart.active .heartone {
+  display: none;
+}
+
+.heart.active .hearttwo {
+  display: block;
+}
+
 .favoritesSwiper .swiper-pagination-bullet-active {
   width: 20px;
   border-radius: 100px;

@@ -1,23 +1,10 @@
-// let workbtn = document.querySelector('.work-btn');
-// let workbtntwo = document.querySelector('.work-btn-two');
-// let contentone = document.querySelector('.content-one');
-// let contenttwo = document.querySelector('.content-two');
-// let iconone = document.querySelector('.icon');
-// let icontwo = document.querySelector('.icon-two');
+let heart = document.querySelectorAll('.heart_in .heart');
 
-// workbtn.addEventListener('click', () => {
-//   contentone.classList.remove('hidden');
-//   contenttwo.classList.add('hidden')
-//   iconone.classList.add('rotate-[-90deg]')
-//   icontwo.classList.remove('rotate-[-90deg]')
-// })
-
-// workbtntwo.addEventListener('click', () => {
-//   contenttwo.classList.remove('hidden');
-//   contentone.classList.add('hidden');
-//   iconone.classList.remove('rotate-[-90deg]')
-//   icontwo.classList.add('rotate-[-90deg]')
-// })
+heart.forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.classList.toggle('active')
+  })
+})
 
 
 let swiper = new Swiper(".homeSwiper", {
