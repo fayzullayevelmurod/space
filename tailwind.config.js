@@ -17,6 +17,7 @@ module.exports = {
         "grey-bg": "#EBEBEB",
         "grey-line": "#DADADA",
         "grey-border": "#ECECEC",
+        "white-bg": "#FFFFFFB2",
       },
     },
   },
