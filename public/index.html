@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="overflow-hidden">
+  <div class="overflow-hidden sm:mb-0 mb-[88px]">
 
     <!-- header -->
     <header class="bg-white-dark py-[14px] border-b-[1px] border-solid border-grey-bg">
@@ -78,12 +78,41 @@
         </div>
       </section>
       <!-- home -->
+
+      <!-- maps -->
+      <section>
+        <div class="container">
+          <div style="position:relative;overflow:hidden;"><a href="https://yandex.uz/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a href="https://yandex.uz/maps/profile?ll=37.575437%2C55.744088&utm_medium=mapframe&utm_source=maps&z=11.11" style="color:#eee;font-size:12px;position:absolute;top:14px;">Yandex Xarita</a><iframe src="https://yandex.uz/map-widget/v1/profile?ll=37.575437%2C55.744088&z=11.11" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+        </div>
+      </section>
+      <!-- maps -->
+
+      <!-- contact -->
+      <section class="my-[60px] lg:my-[100px] md:my-[80px]">
+        <div class="container">
+          <div class="flex items-center md:flex-row flex-col justify-between gap-[20px] sm:p-[32px] p-[24px] bg-white-dark rounded-[10px]">
+            <div class="flex items-center lg:gap-[32px] sm:gap-[20px] gap-[10px]">
+              <img src="./assets/images/icons/mail.svg" alt="">
+              <p class="max-w-[483px] font-Manrope font-bold sm:text-sm sm:leading-[18px] md:text-base md:leading-[20px] lg:text-lg lg:leading-[23px]">
+                Узнавай первым о новых местах, турах, скидках и новостях и акциях! Знания - сила!)
+              </p>
+            </div>
+            <div class="flex items-center sm:flex-row flex-col gap-[10px] sm:gap-[20px] w-full md:w-auto">
+              <input type="email" class="md:w-[200px] sm:w-[50%] w-full focus:outline-none h-[50px] rounded-[8px] py-[15px] px-[20px] border-solid border-[1px] border-grey-border" placeholder="Почта@mail.ru">
+              <button class="md:w-[200px] sm:w-[50%] w-full rounded-[8px] bg-blue text-white h-[50px] font-Manrope font-bold text-base leading-[20px] p-[14.5px]">
+                Подписаться
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact -->
     </main>
 
     <!-- footer -->
-    <footer class="bg-white-dark">
+    <footer class="bg-white-dark lg:pt-[60px] pt-[20px] pb-[20px] lg:pb-[60px]">
       <div class="container">
-        <div class="flex gap-[40px] justify-between lg:pt-[60px] lg:pb-[40px] lg:mb-[40px] pt-[20px] pb-[20px] mb-[20px] border-b-[1px] border-solid border-grey-line">
+        <div class="lg:flex hidden gap-[40px] justify-between pb-[20px] lg:pb-[40px] lg:mb-[40px] mb-[20px] border-b-[1px] border-solid border-grey-line">
           <ul class="flex flex-col gap-[10px] w-[208px]">
             <h6 class="mb-[10px] font-Manrope font-bold text-base leading-[20px] text-dark">
               Горы
@@ -336,6 +365,400 @@
             <li>
               <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
                 Экскурсии по паркам
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:hidden flex justify-center items-center w-full">
+          <div class="flex flex-col w-full">
+            <button class="group border-t border-b py-[16px] border-grey-line focus:outline-none">
+              <div class="flex items-center justify-between">
+                <span class="truncate font-Manrope font-bold text-base leading-[20px] text-dark">
+                  Горы
+                </span>
+                <svg class="group-focus:rotate-[180deg]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-focus:fill-dark" d="M15 18.125L21.25 11.875L8.75 11.875L15 18.125Z" fill="#0059FD"/>
+                </svg>
+              </div>
+              <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-[1000px]">
+                <ul class="flex flex-col gap-[10px] text-left mt-[10px]">
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Горнолыжные курорты
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Альпинизм
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Походы по горным тропам
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Восхождение на горы
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Летний глэмпинг в горах
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Горные велосипедные туры
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Спуск по порогам на реках в горах
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Зимние снегоходные туры
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Ледолазание
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Хижины в горах
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      База отдыха на горнолыжном курорте
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </button>
+            <button class="group border-b py-[16px] border-grey-line focus:outline-none">
+              <div class="flex items-center justify-between w-full">
+                <span class="truncate font-Manrope font-bold text-base leading-[20px] text-dark">
+                  Лес
+                </span>
+                <svg class="group-focus:rotate-[180deg]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-focus:fill-dark" d="M15 18.125L21.25 11.875L8.75 11.875L15 18.125Z" fill="#0059FD"/>
+                </svg>
+              </div>
+              <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-[1000px]">
+                <ul class="flex flex-col gap-[10px] w-[208px] text-left mt-[10px]">
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Кемпинг в лесу
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Прогулки по лесным тропам
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Велосипедные прогулки по лесу
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Лесные домики на деревьях
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Охотничьи угодья
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Фотоохота в лесу
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Прогулки на конях по лесу
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Обучение выживанию в лесу
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </button>
+            <button class="group border-b py-[16px] border-grey-line focus:outline-none">
+              <div class="flex items-center justify-between w-full">
+                <span class="truncate font-Manrope font-bold text-base leading-[20px] text-dark">
+                  Море и пляж
+                </span>
+                <svg class="group-focus:rotate-[180deg]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-focus:fill-dark" d="M15 18.125L21.25 11.875L8.75 11.875L15 18.125Z" fill="#0059FD"/>
+                </svg>
+              </div>
+              <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-[1000px]">
+                <ul class="flex flex-col mt-[10px] gap-[10px] w-[208px] text-left">
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Отдых на пляже
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Сёрфинг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Кайтсерфинг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Дайвинг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Сноркелинг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Яхтинг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Парусный спорт
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Кемпинг на побережье
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Рыбалка на море
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Водные лыжи
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </button>
+            <button class="group border-b py-[16px] border-grey-line focus:outline-none">
+              <div class="flex items-center justify-between w-full">
+                <span class="truncate font-Manrope font-bold text-base leading-[20px] text-dark">
+                  Реки и озёра
+                </span>
+                <svg class="group-focus:rotate-[180deg]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-focus:fill-dark" d="M15 18.125L21.25 11.875L8.75 11.875L15 18.125Z" fill="#0059FD"/>
+                </svg>
+              </div>
+              <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-[1000px]">
+                <ul class="flex flex-col gap-[10px] w-[208px] text-left mt-[10px]">
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Рафтинг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Каякинг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Прогулки на лодках и катамаранах
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Рыбалка на озере
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Отдых на озёрных курортах
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Плавание с аквалангом в озере
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Водные мотоциклы
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Вейкбординг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Гидроциклы
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </button>
+            <button class="group border-b py-[16px] border-grey-line focus:outline-none">
+              <div class="flex items-center justify-between w-full">
+                <span class="truncate font-Manrope font-bold text-base leading-[20px] text-dark">
+                  Парки и заповедники
+                </span>
+                <svg class="group-focus:rotate-[180deg]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-focus:fill-dark" d="M15 18.125L21.25 11.875L8.75 11.875L15 18.125Z" fill="#0059FD"/>
+                </svg>
+              </div>
+              <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-[1000px]">
+                <ul class="flex flex-col gap-[10px] w-[208px] text-left mt-[10px]">
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Сафари в национальных парках
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Походы по национальным паркам
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Фотосафари с дикими животными
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Ночные экскурсии в заповедниках
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Воздушные прогулки на воздушном шаре
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Кемпинг в национальном парке
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Экскурсии по паркам
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="md:flex hidden items-center justify-between lg:py-0 py-[20px]">
+          <span>
+            (c) 2024 CheZaMesto
+          </span>
+          <ul class="flex items-center gap-[10px]">
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Отдых на пляже
+              </a>
+            </li>
+            <div class="w-[4px] h-[4px] bg-grey rounded-[50%]"></div>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Правила
+              </a>
+            </li>
+            <div class="w-[4px] h-[4px] bg-grey rounded-[50%]"></div>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Карта сайта
+              </a>
+            </li>
+            <div class="w-[4px] h-[4px] bg-grey rounded-[50%]"></div>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Политика конфидециальность
+              </a>
+            </li>
+          </ul>
+          <div class="flex items-center gap-[10px]">
+            <a href="#">
+              <img src="./assets/images/icons/instagram_icon.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/images/icons/instagram_icon.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/images/icons/instagram_icon.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/images/icons/instagram_icon.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="md:hidden lg:py-[20px] flex flex-col py-[20px] gap-[20px] items-center justify-between">
+          <div class="flex items-center flex-col sm:flex-row gap-[20px] justify-between w-full">
+            <span>
+              (c) 2024 CheZaMesto
+            </span>
+            <div class="flex items-center gap-[10px]">
+              <a href="#">
+                <img src="./assets/images/icons/instagram_icon.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="./assets/images/icons/instagram_icon.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="./assets/images/icons/instagram_icon.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="./assets/images/icons/instagram_icon.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <ul class="flex flex-col sm:flex-row justify-between items-center gap-[10px] w-full">
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Отдых на пляже
+              </a>
+            </li>
+            <div class="sm:flex hidden w-[4px] h-[4px] bg-grey rounded-[50%]"></div>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Правила
+              </a>
+            </li>
+            <div class="sm:flex hidden w-[4px] h-[4px] bg-grey rounded-[50%]"></div>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Карта сайта
+              </a>
+            </li>
+            <div class="sm:flex hidden w-[4px] h-[4px] bg-grey rounded-[50%]"></div>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Политика конфидециальность
               </a>
             </li>
           </ul>

@@ -1,4 +1,4 @@
-let burger_btn = document.querySelector('.burger_btn');
+let group = document.querySelector('.group');
 let menu_close = document.querySelector('.menu_close');
 let media_menu = document.querySelector('.media_menu');
 
@@ -81,46 +81,3 @@ document.querySelectorAll('.complexsSwiper').forEach((item, index) => {
 
 
 
-ymaps.ready(init);
-
-function init() {
-  // Harita yaratish
-  var myMap = new ymaps.Map("map", {
-    center: [44.895, 37.316], // Haritani kordinatalari yoziladi (kinorlarda aytadiku kordinatalarni ayt deb 🙂 )
-    zoom: 13,
-    controls: ["zoomControl", "fullscreenControl"],
-  });
-
-  myMap.setType("yandex#map");
-  myMap.geoObjects.options.set("preset", "islands#grayIcon");
-
-  // Define the coordinates of the locations
-  var location1 = [44.89, 37.32]; // Example coordinates
-  var location2 = [44.9, 37.31]; // Example coordinates
-
-  // manzilini ko'rsatadiku pin qilib o'sha narsa yoziladigan joy
-  var placemark1 = new ymaps.Placemark(
-    location1,
-    {},
-    {
-      iconLayout: "default#image",
-      iconImageHref: "../../public/assets/images/icons/location.svg", // rasim manzili
-      iconImageSize: [218, 59], // rasim qysayiz rasimni zazmeri
-      iconImageOffset: [-15, -15], // rasimni joylashtirish yani positsiyasi
-    }
-  );
-  var placemark2 = new ymaps.Placemark(
-    location2,
-    {},
-    {
-      iconLayout: "default#image",
-      iconImageHref: "../../public/assets/images/icons/locationtwo.svg", // rasim manzili
-      iconImageSize: [57, 82], // rasim qysayiz rasimni zazmeri
-      iconImageOffset: [-15, -15], // rasimni joylashtirish yani positsiyasi
-    }
-  );
-
-  // Yuqoridagi placemarkni add qilish hudi classlist.add day
-  myMap.geoObjects.add(placemark1);
-  myMap.geoObjects.add(placemark2);
-}
