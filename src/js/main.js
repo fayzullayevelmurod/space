@@ -48,6 +48,26 @@ let swiper = new Swiper(".homeSwiper", {
   },
 });
 
+let swiper2 = new Swiper(".magazineSwiper", {
+  spaceBetween: 10,
+  slidesPerView: 1.20,
+  breakpoints: {
+    768: {
+      spaceBetween: 20,
+      slidesPerView: 2,
+    },
+    993: {
+      slidesPerView: 2.30,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 3,
+    },
+  },
+});
+
 document.querySelectorAll('.complexsSwiper').forEach((item, index) => {
   let swiper2 = new Swiper(item, {
     spaceBetween: 19,
