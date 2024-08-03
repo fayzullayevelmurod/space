@@ -22,6 +22,25 @@ body {
   border-radius: 100px !important;
 }
 
+.favoritesSwiper .swiper-pagination {
+  bottom: 15px;
+}
+
+.favoritesSwiper .swiper-pagination-bullet {
+  transition: .3s ease;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 1;
+  margin: 0 !important;
+}
+
+.favoritesSwiper .swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 100px;
+}
+
 .tab:hover > svg > g > rect {
   fill: white;
 }

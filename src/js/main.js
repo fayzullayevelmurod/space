@@ -54,7 +54,7 @@ let swiper2 = new Swiper(".magazineSwiper", {
   breakpoints: {
     768: {
       spaceBetween: 20,
-      slidesPerView: 2,
+      slidesPerView: 2.30,
     },
     993: {
       slidesPerView: 2.30,
@@ -65,6 +65,12 @@ let swiper2 = new Swiper(".magazineSwiper", {
     1440: {
       slidesPerView: 3,
     },
+  },
+});
+
+var swiper3 = new Swiper(".favoritesSwiper", {
+  pagination: {
+    el: ".swiper-pagination",
   },
 });
 
