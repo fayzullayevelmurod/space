@@ -1305,7 +1305,7 @@ body {
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-  border-radius: 100px;
+  border-radius: 100px !important;
 }
 
 .tab:hover > svg > g > rect {
