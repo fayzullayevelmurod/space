@@ -78,6 +78,29 @@ let swiper4 = new Swiper(".similarSwiper", {
   },
 });
 
+let swiper5 = new Swiper(".programsSwiper", {
+  spaceBetween: 10,
+  slidesPerView: 1.20,
+  breakpoints: {
+    768: {
+      spaceBetween: 20,
+      slidesPerView: 2.30,
+    },
+    993: {
+      spaceBetween: 20,
+      slidesPerView: 2,
+    },
+    1024: {
+      spaceBetween: 20,
+      slidesPerView: 2,
+    },
+    1440: {
+      spaceBetween: 20,
+      slidesPerView: 2,
+    },
+  },
+});
+
 var swiper3 = new Swiper(".favoritesSwiper", {
   pagination: {
     el: ".swiper-pagination",

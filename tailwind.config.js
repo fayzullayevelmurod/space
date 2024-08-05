@@ -18,6 +18,8 @@ module.exports = {
         "grey-line": "#DADADA",
         "grey-border": "#ECECEC",
         "white-bg": "#FFFFFFB2",
+        'line-two': "#EAEAEA",
+        'card-line': "#D6D6D6",
       },
     },
   },
