@@ -20,6 +20,7 @@ module.exports = {
         "white-bg": "#FFFFFFB2",
         'line-two': "#EAEAEA",
         'card-line': "#D6D6D6",
+        'through-line': "#D6D6D6",
       },
     },
   },

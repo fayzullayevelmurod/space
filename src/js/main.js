@@ -100,6 +100,28 @@ let swiper5 = new Swiper(".programsSwiper", {
   },
 });
 
+let swiper6 = new Swiper(".servicesSwiper", {
+  spaceBetween: 10,
+  slidesPerView: 1.20,
+  breakpoints: {
+    768: {
+      spaceBetween: 20,
+    },
+    993: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+    },
+    1024: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+    },
+    1440: {
+      spaceBetween: 20,
+      slidesPerView: 3,
+    },
+  },
+});
+
 var swiper3 = new Swiper(".favoritesSwiper", {
   pagination: {
     el: ".swiper-pagination",
