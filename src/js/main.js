@@ -84,7 +84,6 @@ let swiper5 = new Swiper(".programsSwiper", {
   breakpoints: {
     768: {
       spaceBetween: 20,
-      slidesPerView: 2.30,
     },
     993: {
       spaceBetween: 20,

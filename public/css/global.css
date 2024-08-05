@@ -71,6 +71,14 @@ body {
   fill: #0059FD;
 }
 
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
 /* .max-h-0 {
 	max-height: 0;
 }
