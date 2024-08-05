@@ -1,11 +1,14 @@
-let heart = document.querySelectorAll('.heart_in .heart');
+try {
+  let heart = document.querySelectorAll('.heart_in .heart');
 
-heart.forEach(btn => {
-  btn.addEventListener('click', () => {
-    btn.classList.toggle('active')
+  heart.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btn.classList.toggle('active')
+    })
   })
-})
-
+} catch(err) {
+  console.log(err);
+}
 
 let swiper = new Swiper(".homeSwiper", {
   spaceBetween: 10,
@@ -36,6 +39,26 @@ let swiper = new Swiper(".homeSwiper", {
 });
 
 let swiper2 = new Swiper(".magazineSwiper", {
+  spaceBetween: 10,
+  slidesPerView: 1.20,
+  breakpoints: {
+    768: {
+      spaceBetween: 20,
+      slidesPerView: 2.30,
+    },
+    993: {
+      slidesPerView: 2.30,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+let swiper4 = new Swiper(".similarSwiper", {
   spaceBetween: 10,
   slidesPerView: 1.20,
   breakpoints: {

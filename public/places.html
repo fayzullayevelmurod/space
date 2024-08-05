@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space</title>
+  <!-- swiper css link -->
+  <link rel="stylesheet" href="../src/css/swiper-bundle.min.css" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/tailwind.css" />
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overflow-hidden sm:mb-0 mb-[88px]">
+
+    <!-- header -->
+    <header class="bg-white-dark py-[14px] border-b-[1px] border-solid border-grey-bg">
+      <div class="container flex items-center justify-between">
+        <a href="/" class="w-[99px]">
+          <img src="./assets/images/logo/header_logo.svg" alt="">
+        </a>
+        <ul class="md:flex hidden items-center gap-[20px]">
+          <li>
+            <a href="#" class="font-Manrope font-medium text-[15px] leading-[15px] text-dark flex items-center gap-[10px]">
+              <img src="./assets/images/icons/location_icon.svg" alt="">
+              Карта
+            </a>
+          </li>
+          <li>
+            <a href="#" class="font-Manrope font-medium text-[15px] leading-[15px] text-dark flex items-center gap-[10px]">
+              <img src="./assets/images/icons/location_icon.svg" alt="">
+              Журнал
+            </a>
+          </li>
+          <li>
+            <a href="#" class="font-Manrope font-medium text-[15px] leading-[15px] text-dark flex items-center gap-[10px]">
+              <img src="./assets/images/icons/location_icon.svg" alt="">
+              Избранное
+            </a>
+          </li>
+        </ul>
+        <div class="flex items-center gap-[10px]">
+          <div class="sm:flex hidden items-center justify-between rounded-[6px] overflow-hidden bg-white gap-[5px] p-[5px] w-[240px]">
+            <input type="text" placeholder="Ищите любой отдых" class="focus:outline-none px-[5px] w-full font-Manrope font-medium text-[14px] leading-[14px] text-grey">
+            <button class="rounded-[4px] flex-shrink-0 bg-blue flex items-center justify-center w-[30px] h-[30px]">
+              <img src="./assets/images/icons/search_icon.svg" alt="">
+            </button>
+          </div>
+          <a href="#" class="sm:hidden flex rounded-[4px] items-center justify-center bg-white w-[40px] h-[40px]">
+            <img src="./assets/images/icons/media_search.svg" alt="">
+          </a>
+          <a href="#" class="rounded-[4px] flex items-center justify-center bg-white w-[40px] h-[40px]">
+            <img src="./assets/images/icons/user_icon.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- header -->
+
+    <main>
+
+      <!-- similar-places -->
+      <section class="my-[60px] lg:my-[100px] md:my-[80px]">
+        <div class="container">
+          <div class="flex items-center justify-between mb-[32px]">
+            <h3 class="font-Manrope text-dark font-bold text-2xl">
+              Похожие места
+            </h3>
+          </div>
+          <div class="md:block hidden">
+            <div class="flex heart_in flex-wrap gap-x-[20px] lg:gap-y-[40px] md:gap-y-[30px] gap-y-[20px]">
+              <div class="md:w-[calc(100%_/_2_-_15px)] lg:w-[calc(100%_/_4_-_15px)] sm:w-[calc(100%_/_2_-_10px)] w-[calc(100%)]">
+                <div class="swiper favoritesSwiper relative rounded-[10px] mb-[11px]">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite6.png" alt="">
+                    </div>
+                  </div>
+                  <button class="heart absolute top-[20px] right-[20px] z-[4] w-[32px] h-[32px] bg-white flex items-center justify-center rounded-[50%]">
+                    <svg class="heartone" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.00002 15.7501C8.51627 15.3211 7.96952 14.8749 7.39127 14.4001H7.38377C5.34752 12.7351 3.03977 10.8511 2.02052 8.59361C1.68566 7.87491 1.5082 7.09296 1.50001 6.30011C1.49777 5.21222 1.9341 4.16935 2.71037 3.40719C3.48665 2.64502 4.53736 2.22791 5.62502 2.25011C6.51049 2.25151 7.37689 2.50742 8.12102 2.98736C8.44799 3.19959 8.74383 3.4563 9.00002 3.75011C9.25763 3.45746 9.55355 3.20089 9.87977 2.98736C10.6236 2.50733 11.4898 2.2514 12.375 2.25011C13.4627 2.22791 14.5134 2.64502 15.2897 3.40719C16.0659 4.16935 16.5023 5.21222 16.5 6.30011C16.4924 7.09422 16.3149 7.87751 15.9795 8.59736C14.9603 10.8549 12.6533 12.7381 10.617 14.4001L10.6095 14.4061C10.0305 14.8779 9.48452 15.3241 9.00077 15.7561L9.00002 15.7501ZM5.62502 3.75011C4.9264 3.74137 4.25257 4.00874 3.75002 4.49411C3.26581 4.96973 2.99518 5.6214 2.99995 6.30011C3.00851 6.87799 3.13939 7.4475 3.38402 7.97111C3.86515 8.94514 4.51435 9.82665 5.30177 10.5751C6.04502 11.3251 6.90002 12.0511 7.63952 12.6616C7.84427 12.8304 8.05277 13.0006 8.26127 13.1709L8.39252 13.2781C8.59277 13.4416 8.79977 13.6111 9.00002 13.7776L9.00977 13.7686L9.01427 13.7649H9.01877L9.02552 13.7596H9.02927H9.03302L9.04652 13.7484L9.07727 13.7236L9.08252 13.7191L9.09077 13.7131H9.09527L9.10202 13.7071L9.60002 13.2984L9.73052 13.1911C9.94127 13.0194 10.1498 12.8491 10.3545 12.6804C11.094 12.0699 11.9498 11.3446 12.693 10.5909C13.4805 9.84278 14.1298 8.9615 14.6108 7.98761C14.8598 7.45946 14.9926 6.88399 15 6.30011C15.0031 5.62349 14.7327 4.97433 14.25 4.50011C13.7484 4.01255 13.0745 3.74297 12.375 3.75011C11.5215 3.74286 10.7055 4.10064 10.1325 4.73336L9.00002 6.03836L7.86752 4.73336C7.29456 4.10064 6.47857 3.74286 5.62502 3.75011Z" fill="#2E3A59"/>
+                    </svg>
+                    <svg class="hearttwo hidden" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.5 6.79996C1.49981 5.71271 1.93679 4.67105 2.71261 3.90933C3.48843 3.14762 4.53794 2.72983 5.625 2.74996C6.91299 2.74312 8.14199 3.28934 9 4.24996C9.85801 3.28934 11.087 2.74312 12.375 2.74996C13.4621 2.72983 14.5116 3.14762 15.2874 3.90933C16.0632 4.67105 16.5002 5.71271 16.5 6.79996C16.5 10.817 11.7157 13.85 9 16.25C6.29025 13.8297 1.5 10.82 1.5 6.79996Z" fill="#0059FD"/>
+                    </svg>
+                  </button>
+                  <div class="swiper-pagination flex items-center justify-center gap-[5px]"></div>
+                </div>
+                <div class="flex flex-col gap-[6px]">
+                  <h6 class="font-Manrope font-semibold text-[15px] leading-[16px] text-dark">
+                    Конные прогулки по зимнему лесу
+                  </h6>
+                  <div class="flex items-center justify-between gap-[2px]">
+                    <h4 class="font-Manrope font-bold text-[26px] leading-[31px] text-dark">
+                      от 2 895 ₽ ночь
+                    </h4>
+                    <div class="flex items-center gap-[6px]">
+                      <h5 class="flex items-center gap-[6px] font-Manrope font-semibold text-[16px] leading-[16px] text-dark">
+                        <img src="./assets/images/icons/star_icon.svg" alt="">
+                        4.7
+                      </h5>
+                      <span class="flex font-Manrope text-grey text-[14px] leading-[14px] font-normal">
+                        (108)
+                      </span>
+                    </div>
+                  </div>
+                  <p class="font-Manrope text-grey text-[14px] leading-[18px] font-medium">
+                    2 345 высота над уровнем моря
+                  </p>
+                </div>
+              </div>
+              <div class="md:w-[calc(100%_/_2_-_15px)] lg:w-[calc(100%_/_4_-_15px)] sm:w-[calc(100%_/_2_-_10px)] w-[calc(100%)]">
+                <div class="swiper favoritesSwiper relative rounded-[10px] mb-[11px]">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite6.png" alt="">
+                    </div>
+                  </div>
+                  <button class="heart absolute top-[20px] right-[20px] z-[4] w-[32px] h-[32px] bg-white flex items-center justify-center rounded-[50%]">
+                    <svg class="heartone block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.00002 15.7501C8.51627 15.3211 7.96952 14.8749 7.39127 14.4001H7.38377C5.34752 12.7351 3.03977 10.8511 2.02052 8.59361C1.68566 7.87491 1.5082 7.09296 1.50001 6.30011C1.49777 5.21222 1.9341 4.16935 2.71037 3.40719C3.48665 2.64502 4.53736 2.22791 5.62502 2.25011C6.51049 2.25151 7.37689 2.50742 8.12102 2.98736C8.44799 3.19959 8.74383 3.4563 9.00002 3.75011C9.25763 3.45746 9.55355 3.20089 9.87977 2.98736C10.6236 2.50733 11.4898 2.2514 12.375 2.25011C13.4627 2.22791 14.5134 2.64502 15.2897 3.40719C16.0659 4.16935 16.5023 5.21222 16.5 6.30011C16.4924 7.09422 16.3149 7.87751 15.9795 8.59736C14.9603 10.8549 12.6533 12.7381 10.617 14.4001L10.6095 14.4061C10.0305 14.8779 9.48452 15.3241 9.00077 15.7561L9.00002 15.7501ZM5.62502 3.75011C4.9264 3.74137 4.25257 4.00874 3.75002 4.49411C3.26581 4.96973 2.99518 5.6214 2.99995 6.30011C3.00851 6.87799 3.13939 7.4475 3.38402 7.97111C3.86515 8.94514 4.51435 9.82665 5.30177 10.5751C6.04502 11.3251 6.90002 12.0511 7.63952 12.6616C7.84427 12.8304 8.05277 13.0006 8.26127 13.1709L8.39252 13.2781C8.59277 13.4416 8.79977 13.6111 9.00002 13.7776L9.00977 13.7686L9.01427 13.7649H9.01877L9.02552 13.7596H9.02927H9.03302L9.04652 13.7484L9.07727 13.7236L9.08252 13.7191L9.09077 13.7131H9.09527L9.10202 13.7071L9.60002 13.2984L9.73052 13.1911C9.94127 13.0194 10.1498 12.8491 10.3545 12.6804C11.094 12.0699 11.9498 11.3446 12.693 10.5909C13.4805 9.84278 14.1298 8.9615 14.6108 7.98761C14.8598 7.45946 14.9926 6.88399 15 6.30011C15.0031 5.62349 14.7327 4.97433 14.25 4.50011C13.7484 4.01255 13.0745 3.74297 12.375 3.75011C11.5215 3.74286 10.7055 4.10064 10.1325 4.73336L9.00002 6.03836L7.86752 4.73336C7.29456 4.10064 6.47857 3.74286 5.62502 3.75011Z" fill="#2E3A59"/>
+                    </svg>
+                    <svg class="hearttwo hidden" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.5 6.79996C1.49981 5.71271 1.93679 4.67105 2.71261 3.90933C3.48843 3.14762 4.53794 2.72983 5.625 2.74996C6.91299 2.74312 8.14199 3.28934 9 4.24996C9.85801 3.28934 11.087 2.74312 12.375 2.74996C13.4621 2.72983 14.5116 3.14762 15.2874 3.90933C16.0632 4.67105 16.5002 5.71271 16.5 6.79996C16.5 10.817 11.7157 13.85 9 16.25C6.29025 13.8297 1.5 10.82 1.5 6.79996Z" fill="#0059FD"/>
+                    </svg>
+                  </button>
+                  <div class="swiper-pagination flex items-center justify-center gap-[5px]"></div>
+                </div>
+                <div class="flex flex-col gap-[6px]">
+                  <h6 class="font-Manrope font-semibold text-[15px] leading-[16px] text-dark">
+                    Восхождение на горы Туапсе
+                  </h6>
+                  <div class="flex items-center justify-between gap-[2px]">
+                    <h4 class="font-Manrope font-bold text-[26px] leading-[31px] text-dark">
+                      от 2 895 ₽ ночь
+                    </h4>
+                    <div class="flex items-center gap-[6px]">
+                      <h5 class="flex items-center gap-[6px] font-Manrope font-semibold text-[16px] leading-[16px] text-dark">
+                        <img src="./assets/images/icons/star_icon.svg" alt="">
+                        4.7
+                      </h5>
+                      <span class="flex font-Manrope text-grey text-[14px] leading-[14px] font-normal">
+                        (108)
+                      </span>
+                    </div>
+                  </div>
+                  <p class="font-Manrope text-grey text-[14px] leading-[18px] font-medium">
+                    2 345 высота над уровнем моря
+                  </p>
+                </div>
+              </div>
+              <div class="md:w-[calc(100%_/_2_-_15px)] lg:w-[calc(100%_/_4_-_15px)] sm:w-[calc(100%_/_2_-_10px)] w-[calc(100%)]">
+                <div class="swiper favoritesSwiper relative rounded-[10px] mb-[11px]">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite6.png" alt="">
+                    </div>
+                  </div>
+                  <button class="heart absolute top-[20px] right-[20px] z-[4] w-[32px] h-[32px] bg-white flex items-center justify-center rounded-[50%]">
+                    <svg class="heartone block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.00002 15.7501C8.51627 15.3211 7.96952 14.8749 7.39127 14.4001H7.38377C5.34752 12.7351 3.03977 10.8511 2.02052 8.59361C1.68566 7.87491 1.5082 7.09296 1.50001 6.30011C1.49777 5.21222 1.9341 4.16935 2.71037 3.40719C3.48665 2.64502 4.53736 2.22791 5.62502 2.25011C6.51049 2.25151 7.37689 2.50742 8.12102 2.98736C8.44799 3.19959 8.74383 3.4563 9.00002 3.75011C9.25763 3.45746 9.55355 3.20089 9.87977 2.98736C10.6236 2.50733 11.4898 2.2514 12.375 2.25011C13.4627 2.22791 14.5134 2.64502 15.2897 3.40719C16.0659 4.16935 16.5023 5.21222 16.5 6.30011C16.4924 7.09422 16.3149 7.87751 15.9795 8.59736C14.9603 10.8549 12.6533 12.7381 10.617 14.4001L10.6095 14.4061C10.0305 14.8779 9.48452 15.3241 9.00077 15.7561L9.00002 15.7501ZM5.62502 3.75011C4.9264 3.74137 4.25257 4.00874 3.75002 4.49411C3.26581 4.96973 2.99518 5.6214 2.99995 6.30011C3.00851 6.87799 3.13939 7.4475 3.38402 7.97111C3.86515 8.94514 4.51435 9.82665 5.30177 10.5751C6.04502 11.3251 6.90002 12.0511 7.63952 12.6616C7.84427 12.8304 8.05277 13.0006 8.26127 13.1709L8.39252 13.2781C8.59277 13.4416 8.79977 13.6111 9.00002 13.7776L9.00977 13.7686L9.01427 13.7649H9.01877L9.02552 13.7596H9.02927H9.03302L9.04652 13.7484L9.07727 13.7236L9.08252 13.7191L9.09077 13.7131H9.09527L9.10202 13.7071L9.60002 13.2984L9.73052 13.1911C9.94127 13.0194 10.1498 12.8491 10.3545 12.6804C11.094 12.0699 11.9498 11.3446 12.693 10.5909C13.4805 9.84278 14.1298 8.9615 14.6108 7.98761C14.8598 7.45946 14.9926 6.88399 15 6.30011C15.0031 5.62349 14.7327 4.97433 14.25 4.50011C13.7484 4.01255 13.0745 3.74297 12.375 3.75011C11.5215 3.74286 10.7055 4.10064 10.1325 4.73336L9.00002 6.03836L7.86752 4.73336C7.29456 4.10064 6.47857 3.74286 5.62502 3.75011Z" fill="#2E3A59"/>
+                    </svg>
+                    <svg class="hearttwo hidden" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.5 6.79996C1.49981 5.71271 1.93679 4.67105 2.71261 3.90933C3.48843 3.14762 4.53794 2.72983 5.625 2.74996C6.91299 2.74312 8.14199 3.28934 9 4.24996C9.85801 3.28934 11.087 2.74312 12.375 2.74996C13.4621 2.72983 14.5116 3.14762 15.2874 3.90933C16.0632 4.67105 16.5002 5.71271 16.5 6.79996C16.5 10.817 11.7157 13.85 9 16.25C6.29025 13.8297 1.5 10.82 1.5 6.79996Z" fill="#0059FD"/>
+                    </svg>
+                  </button>
+                  <div class="swiper-pagination flex items-center justify-center gap-[5px]"></div>
+                </div>
+                <div class="flex flex-col gap-[6px]">
+                  <h6 class="font-Manrope font-semibold text-[15px] leading-[16px] text-dark">
+                    Подъем на гору Фишт
+                  </h6>
+                  <div class="flex items-center justify-between gap-[2px]">
+                    <h4 class="font-Manrope font-bold text-[26px] leading-[31px] text-dark">
+                      от 2 895 ₽ ночь
+                    </h4>
+                    <div class="flex items-center gap-[6px]">
+                      <h5 class="flex items-center gap-[6px] font-Manrope font-semibold text-[16px] leading-[16px] text-dark">
+                        <img src="./assets/images/icons/star_icon.svg" alt="">
+                        4.7
+                      </h5>
+                      <span class="flex font-Manrope text-grey text-[14px] leading-[14px] font-normal">
+                        (108)
+                      </span>
+                    </div>
+                  </div>
+                  <p class="font-Manrope text-grey text-[14px] leading-[18px] font-medium">
+                    2 345 высота над уровнем моря
+                  </p>
+                </div>
+              </div>
+              <div class="md:w-[calc(100%_/_2_-_15px)] lg:w-[calc(100%_/_4_-_15px)] sm:w-[calc(100%_/_2_-_10px)] w-[calc(100%)]">
+                <div class="swiper favoritesSwiper relative rounded-[10px] mb-[11px]">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite1.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite3.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite2.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                      <img class="w-full" src="./assets/images/favorite6.png" alt="">
+                    </div>
+                  </div>
+                  <button class="heart absolute top-[20px] right-[20px] z-[4] w-[32px] h-[32px] bg-white flex items-center justify-center rounded-[50%]">
+                    <svg class="heartone block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.00002 15.7501C8.51627 15.3211 7.96952 14.8749 7.39127 14.4001H7.38377C5.34752 12.7351 3.03977 10.8511 2.02052 8.59361C1.68566 7.87491 1.5082 7.09296 1.50001 6.30011C1.49777 5.21222 1.9341 4.16935 2.71037 3.40719C3.48665 2.64502 4.53736 2.22791 5.62502 2.25011C6.51049 2.25151 7.37689 2.50742 8.12102 2.98736C8.44799 3.19959 8.74383 3.4563 9.00002 3.75011C9.25763 3.45746 9.55355 3.20089 9.87977 2.98736C10.6236 2.50733 11.4898 2.2514 12.375 2.25011C13.4627 2.22791 14.5134 2.64502 15.2897 3.40719C16.0659 4.16935 16.5023 5.21222 16.5 6.30011C16.4924 7.09422 16.3149 7.87751 15.9795 8.59736C14.9603 10.8549 12.6533 12.7381 10.617 14.4001L10.6095 14.4061C10.0305 14.8779 9.48452 15.3241 9.00077 15.7561L9.00002 15.7501ZM5.62502 3.75011C4.9264 3.74137 4.25257 4.00874 3.75002 4.49411C3.26581 4.96973 2.99518 5.6214 2.99995 6.30011C3.00851 6.87799 3.13939 7.4475 3.38402 7.97111C3.86515 8.94514 4.51435 9.82665 5.30177 10.5751C6.04502 11.3251 6.90002 12.0511 7.63952 12.6616C7.84427 12.8304 8.05277 13.0006 8.26127 13.1709L8.39252 13.2781C8.59277 13.4416 8.79977 13.6111 9.00002 13.7776L9.00977 13.7686L9.01427 13.7649H9.01877L9.02552 13.7596H9.02927H9.03302L9.04652 13.7484L9.07727 13.7236L9.08252 13.7191L9.09077 13.7131H9.09527L9.10202 13.7071L9.60002 13.2984L9.73052 13.1911C9.94127 13.0194 10.1498 12.8491 10.3545 12.6804C11.094 12.0699 11.9498 11.3446 12.693 10.5909C13.4805 9.84278 14.1298 8.9615 14.6108 7.98761C14.8598 7.45946 14.9926 6.88399 15 6.30011C15.0031 5.62349 14.7327 4.97433 14.25 4.50011C13.7484 4.01255 13.0745 3.74297 12.375 3.75011C11.5215 3.74286 10.7055 4.10064 10.1325 4.73336L9.00002 6.03836L7.86752 4.73336C7.29456 4.10064 6.47857 3.74286 5.62502 3.75011Z" fill="#2E3A59"/>
+                    </svg>
+                    <svg class="hearttwo hidden" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.5 6.79996C1.49981 5.71271 1.93679 4.67105 2.71261 3.90933C3.48843 3.14762 4.53794 2.72983 5.625 2.74996C6.91299 2.74312 8.14199 3.28934 9 4.24996C9.85801 3.28934 11.087 2.74312 12.375 2.74996C13.4621 2.72983 14.5116 3.14762 15.2874 3.90933C16.0632 4.67105 16.5002 5.71271 16.5 6.79996C16.5 10.817 11.7157 13.85 9 16.25C6.29025 13.8297 1.5 10.82 1.5 6.79996Z" fill="#0059FD"/>
+                    </svg>
+                  </button>
+                  <div class="swiper-pagination flex items-center justify-center gap-[5px]"></div>
+                </div>
+                <div class="flex flex-col gap-[6px]">
+                  <h6 class="font-Manrope font-semibold text-[15px] leading-[16px] text-dark">
+                    Параглайдинг в Анапе с инструктором
+                  </h6>
+                  <div class="flex items-center justify-between gap-[2px]">
+                    <h4 class="font-Manrope font-bold text-[26px] leading-[31px] text-dark">
+                      от 2 895 ₽ ночь
+                    </h4>
+                    <div class="flex items-center gap-[6px]">
+                      <h5 class="flex items-center gap-[6px] font-Manrope font-semibold text-[16px] leading-[16px] text-dark">
+                        <img src="./assets/images/icons/star_icon.svg" alt="">
+                        4.7
+                      </h5>
+                      <span class="flex font-Manrope text-grey text-[14px] leading-[14px] font-normal">
+                        (108)
+                      </span>
+                    </div>
+                  </div>
+                  <p class="font-Manrope text-grey text-[14px] leading-[18px] font-medium">
+                    2 345 высота над уровнем моря
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:hidden block swiper similarSwiper">
+            <div class="swiper-wrapper h-auto heart_in">
+              <div class="swiper-slide">
+                <div>
+                  <div class="swiper favoritesSwiper relative rounded-[10px] mb-[11px]">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite4.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite3.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite2.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite5.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite6.png" alt="">
+                      </div>
+                    </div>
+                    <button class="heart absolute top-[20px] right-[20px] z-[4] w-[32px] h-[32px] bg-white flex items-center justify-center rounded-[50%]">
+                      <svg class="heartone block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.00002 15.7501C8.51627 15.3211 7.96952 14.8749 7.39127 14.4001H7.38377C5.34752 12.7351 3.03977 10.8511 2.02052 8.59361C1.68566 7.87491 1.5082 7.09296 1.50001 6.30011C1.49777 5.21222 1.9341 4.16935 2.71037 3.40719C3.48665 2.64502 4.53736 2.22791 5.62502 2.25011C6.51049 2.25151 7.37689 2.50742 8.12102 2.98736C8.44799 3.19959 8.74383 3.4563 9.00002 3.75011C9.25763 3.45746 9.55355 3.20089 9.87977 2.98736C10.6236 2.50733 11.4898 2.2514 12.375 2.25011C13.4627 2.22791 14.5134 2.64502 15.2897 3.40719C16.0659 4.16935 16.5023 5.21222 16.5 6.30011C16.4924 7.09422 16.3149 7.87751 15.9795 8.59736C14.9603 10.8549 12.6533 12.7381 10.617 14.4001L10.6095 14.4061C10.0305 14.8779 9.48452 15.3241 9.00077 15.7561L9.00002 15.7501ZM5.62502 3.75011C4.9264 3.74137 4.25257 4.00874 3.75002 4.49411C3.26581 4.96973 2.99518 5.6214 2.99995 6.30011C3.00851 6.87799 3.13939 7.4475 3.38402 7.97111C3.86515 8.94514 4.51435 9.82665 5.30177 10.5751C6.04502 11.3251 6.90002 12.0511 7.63952 12.6616C7.84427 12.8304 8.05277 13.0006 8.26127 13.1709L8.39252 13.2781C8.59277 13.4416 8.79977 13.6111 9.00002 13.7776L9.00977 13.7686L9.01427 13.7649H9.01877L9.02552 13.7596H9.02927H9.03302L9.04652 13.7484L9.07727 13.7236L9.08252 13.7191L9.09077 13.7131H9.09527L9.10202 13.7071L9.60002 13.2984L9.73052 13.1911C9.94127 13.0194 10.1498 12.8491 10.3545 12.6804C11.094 12.0699 11.9498 11.3446 12.693 10.5909C13.4805 9.84278 14.1298 8.9615 14.6108 7.98761C14.8598 7.45946 14.9926 6.88399 15 6.30011C15.0031 5.62349 14.7327 4.97433 14.25 4.50011C13.7484 4.01255 13.0745 3.74297 12.375 3.75011C11.5215 3.74286 10.7055 4.10064 10.1325 4.73336L9.00002 6.03836L7.86752 4.73336C7.29456 4.10064 6.47857 3.74286 5.62502 3.75011Z" fill="#2E3A59"/>
+                      </svg>
+                      <svg class="hearttwo hidden" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 6.79996C1.49981 5.71271 1.93679 4.67105 2.71261 3.90933C3.48843 3.14762 4.53794 2.72983 5.625 2.74996C6.91299 2.74312 8.14199 3.28934 9 4.24996C9.85801 3.28934 11.087 2.74312 12.375 2.74996C13.4621 2.72983 14.5116 3.14762 15.2874 3.90933C16.0632 4.67105 16.5002 5.71271 16.5 6.79996C16.5 10.817 11.7157 13.85 9 16.25C6.29025 13.8297 1.5 10.82 1.5 6.79996Z" fill="#0059FD"/>
+                      </svg>
+                    </button>
+                    <div class="swiper-pagination flex items-center justify-center gap-[5px]"></div>
+                  </div>
+                  <div class="flex flex-col gap-[6px]">
+                    <h6 class="font-Manrope font-semibold text-[15px] leading-[16px] text-dark">
+                      Параглайдинг в Анапе с инструктором
+                    </h6>
+                    <div class="flex items-center justify-between gap-[2px]">
+                      <h4 class="font-Manrope font-bold text-[26px] leading-[31px] text-dark">
+                        от 2 895 ₽ ночь
+                      </h4>
+                      <div class="flex items-center gap-[6px]">
+                        <h5 class="flex items-center gap-[6px] font-Manrope font-semibold text-[16px] leading-[16px] text-dark">
+                          <img src="./assets/images/icons/star_icon.svg" alt="">
+                          4.7
+                        </h5>
+                        <span class="flex font-Manrope text-grey text-[14px] leading-[14px] font-normal">
+                          (108)
+                        </span>
+                      </div>
+                    </div>
+                    <p class="font-Manrope text-grey text-[14px] leading-[18px] font-medium">
+                      2 345 высота над уровнем моря
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <div class="swiper favoritesSwiper relative rounded-[10px] mb-[11px]">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite4.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite3.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite2.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite5.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite6.png" alt="">
+                      </div>
+                    </div>
+                    <button class="heart absolute top-[20px] right-[20px] z-[4] w-[32px] h-[32px] bg-white flex items-center justify-center rounded-[50%]">
+                      <svg class="heartone block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.00002 15.7501C8.51627 15.3211 7.96952 14.8749 7.39127 14.4001H7.38377C5.34752 12.7351 3.03977 10.8511 2.02052 8.59361C1.68566 7.87491 1.5082 7.09296 1.50001 6.30011C1.49777 5.21222 1.9341 4.16935 2.71037 3.40719C3.48665 2.64502 4.53736 2.22791 5.62502 2.25011C6.51049 2.25151 7.37689 2.50742 8.12102 2.98736C8.44799 3.19959 8.74383 3.4563 9.00002 3.75011C9.25763 3.45746 9.55355 3.20089 9.87977 2.98736C10.6236 2.50733 11.4898 2.2514 12.375 2.25011C13.4627 2.22791 14.5134 2.64502 15.2897 3.40719C16.0659 4.16935 16.5023 5.21222 16.5 6.30011C16.4924 7.09422 16.3149 7.87751 15.9795 8.59736C14.9603 10.8549 12.6533 12.7381 10.617 14.4001L10.6095 14.4061C10.0305 14.8779 9.48452 15.3241 9.00077 15.7561L9.00002 15.7501ZM5.62502 3.75011C4.9264 3.74137 4.25257 4.00874 3.75002 4.49411C3.26581 4.96973 2.99518 5.6214 2.99995 6.30011C3.00851 6.87799 3.13939 7.4475 3.38402 7.97111C3.86515 8.94514 4.51435 9.82665 5.30177 10.5751C6.04502 11.3251 6.90002 12.0511 7.63952 12.6616C7.84427 12.8304 8.05277 13.0006 8.26127 13.1709L8.39252 13.2781C8.59277 13.4416 8.79977 13.6111 9.00002 13.7776L9.00977 13.7686L9.01427 13.7649H9.01877L9.02552 13.7596H9.02927H9.03302L9.04652 13.7484L9.07727 13.7236L9.08252 13.7191L9.09077 13.7131H9.09527L9.10202 13.7071L9.60002 13.2984L9.73052 13.1911C9.94127 13.0194 10.1498 12.8491 10.3545 12.6804C11.094 12.0699 11.9498 11.3446 12.693 10.5909C13.4805 9.84278 14.1298 8.9615 14.6108 7.98761C14.8598 7.45946 14.9926 6.88399 15 6.30011C15.0031 5.62349 14.7327 4.97433 14.25 4.50011C13.7484 4.01255 13.0745 3.74297 12.375 3.75011C11.5215 3.74286 10.7055 4.10064 10.1325 4.73336L9.00002 6.03836L7.86752 4.73336C7.29456 4.10064 6.47857 3.74286 5.62502 3.75011Z" fill="#2E3A59"/>
+                      </svg>
+                      <svg class="hearttwo hidden" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 6.79996C1.49981 5.71271 1.93679 4.67105 2.71261 3.90933C3.48843 3.14762 4.53794 2.72983 5.625 2.74996C6.91299 2.74312 8.14199 3.28934 9 4.24996C9.85801 3.28934 11.087 2.74312 12.375 2.74996C13.4621 2.72983 14.5116 3.14762 15.2874 3.90933C16.0632 4.67105 16.5002 5.71271 16.5 6.79996C16.5 10.817 11.7157 13.85 9 16.25C6.29025 13.8297 1.5 10.82 1.5 6.79996Z" fill="#0059FD"/>
+                      </svg>
+                    </button>
+                    <div class="swiper-pagination flex items-center justify-center gap-[5px]"></div>
+                  </div>
+                  <div class="flex flex-col gap-[6px]">
+                    <h6 class="font-Manrope font-semibold text-[15px] leading-[16px] text-dark">
+                      Параглайдинг в Анапе с инструктором
+                    </h6>
+                    <div class="flex items-center justify-between gap-[2px]">
+                      <h4 class="font-Manrope font-bold text-[26px] leading-[31px] text-dark">
+                        от 2 895 ₽ ночь
+                      </h4>
+                      <div class="flex items-center gap-[6px]">
+                        <h5 class="flex items-center gap-[6px] font-Manrope font-semibold text-[16px] leading-[16px] text-dark">
+                          <img src="./assets/images/icons/star_icon.svg" alt="">
+                          4.7
+                        </h5>
+                        <span class="flex font-Manrope text-grey text-[14px] leading-[14px] font-normal">
+                          (108)
+                        </span>
+                      </div>
+                    </div>
+                    <p class="font-Manrope text-grey text-[14px] leading-[18px] font-medium">
+                      2 345 высота над уровнем моря
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <div class="swiper favoritesSwiper relative rounded-[10px] mb-[11px]">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite4.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite1.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite3.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite2.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite5.png" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img class="w-full" src="./assets/images/favorite6.png" alt="">
+                      </div>
+                    </div>
+                    <button class="heart absolute top-[20px] right-[20px] z-[4] w-[32px] h-[32px] bg-white flex items-center justify-center rounded-[50%]">
+                      <svg class="heartone block" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.00002 15.7501C8.51627 15.3211 7.96952 14.8749 7.39127 14.4001H7.38377C5.34752 12.7351 3.03977 10.8511 2.02052 8.59361C1.68566 7.87491 1.5082 7.09296 1.50001 6.30011C1.49777 5.21222 1.9341 4.16935 2.71037 3.40719C3.48665 2.64502 4.53736 2.22791 5.62502 2.25011C6.51049 2.25151 7.37689 2.50742 8.12102 2.98736C8.44799 3.19959 8.74383 3.4563 9.00002 3.75011C9.25763 3.45746 9.55355 3.20089 9.87977 2.98736C10.6236 2.50733 11.4898 2.2514 12.375 2.25011C13.4627 2.22791 14.5134 2.64502 15.2897 3.40719C16.0659 4.16935 16.5023 5.21222 16.5 6.30011C16.4924 7.09422 16.3149 7.87751 15.9795 8.59736C14.9603 10.8549 12.6533 12.7381 10.617 14.4001L10.6095 14.4061C10.0305 14.8779 9.48452 15.3241 9.00077 15.7561L9.00002 15.7501ZM5.62502 3.75011C4.9264 3.74137 4.25257 4.00874 3.75002 4.49411C3.26581 4.96973 2.99518 5.6214 2.99995 6.30011C3.00851 6.87799 3.13939 7.4475 3.38402 7.97111C3.86515 8.94514 4.51435 9.82665 5.30177 10.5751C6.04502 11.3251 6.90002 12.0511 7.63952 12.6616C7.84427 12.8304 8.05277 13.0006 8.26127 13.1709L8.39252 13.2781C8.59277 13.4416 8.79977 13.6111 9.00002 13.7776L9.00977 13.7686L9.01427 13.7649H9.01877L9.02552 13.7596H9.02927H9.03302L9.04652 13.7484L9.07727 13.7236L9.08252 13.7191L9.09077 13.7131H9.09527L9.10202 13.7071L9.60002 13.2984L9.73052 13.1911C9.94127 13.0194 10.1498 12.8491 10.3545 12.6804C11.094 12.0699 11.9498 11.3446 12.693 10.5909C13.4805 9.84278 14.1298 8.9615 14.6108 7.98761C14.8598 7.45946 14.9926 6.88399 15 6.30011C15.0031 5.62349 14.7327 4.97433 14.25 4.50011C13.7484 4.01255 13.0745 3.74297 12.375 3.75011C11.5215 3.74286 10.7055 4.10064 10.1325 4.73336L9.00002 6.03836L7.86752 4.73336C7.29456 4.10064 6.47857 3.74286 5.62502 3.75011Z" fill="#2E3A59"/>
+                      </svg>
+                      <svg class="hearttwo hidden" width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 6.79996C1.49981 5.71271 1.93679 4.67105 2.71261 3.90933C3.48843 3.14762 4.53794 2.72983 5.625 2.74996C6.91299 2.74312 8.14199 3.28934 9 4.24996C9.85801 3.28934 11.087 2.74312 12.375 2.74996C13.4621 2.72983 14.5116 3.14762 15.2874 3.90933C16.0632 4.67105 16.5002 5.71271 16.5 6.79996C16.5 10.817 11.7157 13.85 9 16.25C6.29025 13.8297 1.5 10.82 1.5 6.79996Z" fill="#0059FD"/>
+                      </svg>
+                    </button>
+                    <div class="swiper-pagination flex items-center justify-center gap-[5px]"></div>
+                  </div>
+                  <div class="flex flex-col gap-[6px]">
+                    <h6 class="font-Manrope font-semibold text-[15px] leading-[16px] text-dark">
+                      Параглайдинг в Анапе с инструктором
+                    </h6>
+                    <div class="flex items-center justify-between gap-[2px]">
+                      <h4 class="font-Manrope font-bold text-[26px] leading-[31px] text-dark">
+                        от 2 895 ₽ ночь
+                      </h4>
+                      <div class="flex items-center gap-[6px]">
+                        <h5 class="flex items-center gap-[6px] font-Manrope font-semibold text-[16px] leading-[16px] text-dark">
+                          <img src="./assets/images/icons/star_icon.svg" alt="">
+                          4.7
+                        </h5>
+                        <span class="flex font-Manrope text-grey text-[14px] leading-[14px] font-normal">
+                          (108)
+                        </span>
+                      </div>
+                    </div>
+                    <p class="font-Manrope text-grey text-[14px] leading-[18px] font-medium">
+                      2 345 высота над уровнем моря
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- similar-places -->
+
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-white-dark lg:pt-[60px] pt-[20px] pb-[20px] lg:pb-[60px]">
+      <div class="container">
+        <div class="lg:flex hidden gap-[40px] justify-between pb-[20px] lg:pb-[40px] lg:mb-[40px] mb-[20px] border-b-[1px] border-solid border-grey-line">
+          <ul class="flex flex-col gap-[10px] w-[208px]">
+            <h6 class="mb-[10px] font-Manrope font-bold text-base leading-[20px] text-dark">
+              Горы
+            </h6>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Горнолыжные курорты
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Альпинизм
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Походы по горным тропам
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Восхождение на горы
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Летний глэмпинг в горах
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Горные велосипедные туры
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Спуск по порогам на реках в горах
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Зимние снегоходные туры
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Ледолазание
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Хижины в горах
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                База отдыха на горнолыжном курорте
+              </a>
+            </li>
+          </ul>
+          <ul class="flex flex-col gap-[10px] w-[208px]">
+            <h6 class="mb-[10px] font-Manrope font-bold text-base leading-[20px] text-dark">
+              Лес
+            </h6>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Кемпинг в лесу
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Прогулки по лесным тропам
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Велосипедные прогулки по лесу
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Лесные домики на деревьях
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Охотничьи угодья
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Фотоохота в лесу
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Прогулки на конях по лесу
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Обучение выживанию в лесу
+              </a>
+            </li>
+          </ul>
+          <ul class="flex flex-col gap-[10px] w-[208px]">
+            <h6 class="mb-[10px] font-Manrope font-bold text-base leading-[20px] text-dark">
+              Море и пляж
+            </h6>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Отдых на пляже
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Сёрфинг
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Кайтсерфинг
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Дайвинг
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Сноркелинг
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Яхтинг
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Парусный спорт
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Кемпинг на побережье
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Рыбалка на море
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Водные лыжи
+              </a>
+            </li>
+          </ul>
+          <ul class="flex flex-col gap-[10px] w-[208px]">
+            <h6 class="mb-[10px] font-Manrope font-bold text-base leading-[20px] text-dark">
+              Реки и озёра
+            </h6>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Рафтинг
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Каякинг
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Прогулки на лодках и катамаранах
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Рыбалка на озере
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Отдых на озёрных курортах
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Плавание с аквалангом в озере
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Водные мотоциклы
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Вейкбординг
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Гидроциклы
+              </a>
+            </li>
+          </ul>
+          <ul class="flex flex-col gap-[10px] w-[208px]">
+            <h6 class="mb-[10px] font-Manrope font-bold text-base leading-[20px] text-dark">
+              Парки и заповедники
+            </h6>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Сафари в национальных парках
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Походы по национальным паркам
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Фотосафари с дикими животными
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Ночные экскурсии в заповедниках
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Воздушные прогулки на воздушном шаре
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Кемпинг в национальном парке
+              </a>
+            </li>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Экскурсии по паркам
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="lg:hidden flex justify-center items-center w-full">
+          <div class="flex flex-col w-full">
+            <button class="group border-t border-b py-[16px] border-grey-line focus:outline-none">
+              <div class="flex items-center justify-between">
+                <span class="truncate font-Manrope font-bold text-base leading-[20px] text-dark">
+                  Горы
+                </span>
+                <svg class="group-focus:rotate-[180deg]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-focus:fill-dark" d="M15 18.125L21.25 11.875L8.75 11.875L15 18.125Z" fill="#0059FD"/>
+                </svg>
+              </div>
+              <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-[1000px]">
+                <ul class="flex flex-col gap-[10px] text-left mt-[10px] lg:w-[208px] w-full">
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Горнолыжные курорты
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Альпинизм
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Походы по горным тропам
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Восхождение на горы
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Летний глэмпинг в горах
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Горные велосипедные туры
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Спуск по порогам на реках в горах
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Зимние снегоходные туры
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Ледолазание
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Хижины в горах
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      База отдыха на горнолыжном курорте
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </button>
+            <button class="group border-b py-[16px] border-grey-line focus:outline-none">
+              <div class="flex items-center justify-between w-full">
+                <span class="truncate font-Manrope font-bold text-base leading-[20px] text-dark">
+                  Лес
+                </span>
+                <svg class="group-focus:rotate-[180deg]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-focus:fill-dark" d="M15 18.125L21.25 11.875L8.75 11.875L15 18.125Z" fill="#0059FD"/>
+                </svg>
+              </div>
+              <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-[1000px]">
+                <ul class="flex flex-col gap-[10px] lg:w-[208px] w-full text-left mt-[10px]">
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Кемпинг в лесу
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Прогулки по лесным тропам
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Велосипедные прогулки по лесу
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Лесные домики на деревьях
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Охотничьи угодья
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Фотоохота в лесу
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Прогулки на конях по лесу
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Обучение выживанию в лесу
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </button>
+            <button class="group border-b py-[16px] border-grey-line focus:outline-none">
+              <div class="flex items-center justify-between w-full">
+                <span class="truncate font-Manrope font-bold text-base leading-[20px] text-dark">
+                  Море и пляж
+                </span>
+                <svg class="group-focus:rotate-[180deg]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-focus:fill-dark" d="M15 18.125L21.25 11.875L8.75 11.875L15 18.125Z" fill="#0059FD"/>
+                </svg>
+              </div>
+              <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-[1000px]">
+                <ul class="flex flex-col mt-[10px] gap-[10px] lg:w-[208px] w-full text-left">
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Отдых на пляже
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Сёрфинг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Кайтсерфинг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Дайвинг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Сноркелинг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Яхтинг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Парусный спорт
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Кемпинг на побережье
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Рыбалка на море
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Водные лыжи
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </button>
+            <button class="group border-b py-[16px] border-grey-line focus:outline-none">
+              <div class="flex items-center justify-between w-full">
+                <span class="truncate font-Manrope font-bold text-base leading-[20px] text-dark">
+                  Реки и озёра
+                </span>
+                <svg class="group-focus:rotate-[180deg]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-focus:fill-dark" d="M15 18.125L21.25 11.875L8.75 11.875L15 18.125Z" fill="#0059FD"/>
+                </svg>
+              </div>
+              <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-[1000px]">
+                <ul class="flex flex-col gap-[10px] lg:w-[208px] w-full text-left mt-[10px]">
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Рафтинг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Каякинг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Прогулки на лодках и катамаранах
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Рыбалка на озере
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Отдых на озёрных курортах
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Плавание с аквалангом в озере
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Водные мотоциклы
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Вейкбординг
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Гидроциклы
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </button>
+            <button class="group border-b py-[16px] border-grey-line focus:outline-none">
+              <div class="flex items-center justify-between w-full">
+                <span class="truncate font-Manrope font-bold text-base leading-[20px] text-dark">
+                  Парки и заповедники
+                </span>
+                <svg class="group-focus:rotate-[180deg]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="group-focus:fill-dark" d="M15 18.125L21.25 11.875L8.75 11.875L15 18.125Z" fill="#0059FD"/>
+                </svg>
+              </div>
+              <div class="max-h-0 overflow-hidden duration-300 group-focus:max-h-[1000px]">
+                <ul class="flex flex-col gap-[10px] lg:w-[208px] w-full text-left mt-[10px]">
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Сафари в национальных парках
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Походы по национальным паркам
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Фотосафари с дикими животными
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Ночные экскурсии в заповедниках
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Воздушные прогулки на воздушном шаре
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Кемпинг в национальном парке
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                      Экскурсии по паркам
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="md:flex hidden items-center justify-between lg:py-0 py-[20px]">
+          <span>
+            (c) 2024 CheZaMesto
+          </span>
+          <ul class="flex items-center gap-[10px]">
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Отдых на пляже
+              </a>
+            </li>
+            <div class="w-[4px] h-[4px] bg-grey rounded-[50%]"></div>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Правила
+              </a>
+            </li>
+            <div class="w-[4px] h-[4px] bg-grey rounded-[50%]"></div>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Карта сайта
+              </a>
+            </li>
+            <div class="w-[4px] h-[4px] bg-grey rounded-[50%]"></div>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Политика конфидециальность
+              </a>
+            </li>
+          </ul>
+          <div class="flex items-center gap-[10px]">
+            <a href="#">
+              <img src="./assets/images/icons/instagram_icon.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/images/icons/instagram_icon.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/images/icons/instagram_icon.svg" alt="">
+            </a>
+            <a href="#">
+              <img src="./assets/images/icons/instagram_icon.svg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="md:hidden lg:py-[20px] flex flex-col py-[20px] gap-[20px] items-center justify-between">
+          <div class="flex items-center flex-col sm:flex-row gap-[20px] justify-between w-full">
+            <span>
+              (c) 2024 CheZaMesto
+            </span>
+            <div class="flex items-center gap-[10px]">
+              <a href="#">
+                <img src="./assets/images/icons/instagram_icon.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="./assets/images/icons/instagram_icon.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="./assets/images/icons/instagram_icon.svg" alt="">
+              </a>
+              <a href="#">
+                <img src="./assets/images/icons/instagram_icon.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <ul class="flex flex-col sm:flex-row justify-between items-center gap-[10px] w-full">
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Отдых на пляже
+              </a>
+            </li>
+            <div class="sm:flex hidden w-[4px] h-[4px] bg-grey rounded-[50%]"></div>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Правила
+              </a>
+            </li>
+            <div class="sm:flex hidden w-[4px] h-[4px] bg-grey rounded-[50%]"></div>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Карта сайта
+              </a>
+            </li>
+            <div class="sm:flex hidden w-[4px] h-[4px] bg-grey rounded-[50%]"></div>
+            <li>
+              <a href="#" class="font-Manrope text-grey text-sm leading-[19px]">
+                Политика конфидециальность
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <!-- media_menu -->
+    <section class="md:hidden flex z-10 fixed bottom-0 w-full shadow-[-1px_-1px_8px_1px_rgba(34,60,80,0.11)] bg-white border-[1px] h-[88px] rounded-tl-[10px] rounded-tr-[10px]">
+      <div class="container flex items-center justify-between">
+        <div class="sm:px-[40px] w-full px-0 flex justify-between items-center md:px-0">
+          <a href="#" class="flex link hover:text-blue focus:text-blue active:text-blue items-center uppercase font-medium flex-col gap-[8px] text-xs font-Manrope text-grey">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 21H5V19H2V17H5V15H7V21ZM22 19H9V17H22V19ZM17 15H15V13H2V11H15V9.012H17V15ZM22 13H19V11H22V13ZM11 9H9V7H2V5H9V3H11V9ZM22 7H13V5H22V7Z" fill="#727B85"/>
+            </svg>
+            Главная
+          </a>
+          <a href="#" class="flex link hover:text-blue focus:text-blue active:text-blue items-center uppercase font-medium flex-col gap-[8px] text-xs font-Manrope text-grey">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 21H5V19H2V17H5V15H7V21ZM22 19H9V17H22V19ZM17 15H15V13H2V11H15V9.012H17V15ZM22 13H19V11H22V13ZM11 9H9V7H2V5H9V3H11V9ZM22 7H13V5H22V7Z" fill="#727B85"/>
+            </svg>
+            Туры
+          </a>
+          <a href="#" class="flex link hover:text-blue focus:text-blue active:text-blue items-center uppercase font-medium flex-col gap-[8px] text-xs font-Manrope text-grey">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 21H5V19H2V17H5V15H7V21ZM22 19H9V17H22V19ZM17 15H15V13H2V11H15V9.012H17V15ZM22 13H19V11H22V13ZM11 9H9V7H2V5H9V3H11V9ZM22 7H13V5H22V7Z" fill="#727B85"/>
+            </svg>
+            Места
+          </a>
+          <a href="#" class="flex link hover:text-blue focus:text-blue active:text-blue items-center uppercase font-medium flex-col gap-[8px] text-xs font-Manrope text-grey">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.82 22H10.18C9.71012 22 9.30357 21.673 9.20301 21.214L8.79601 19.33C8.25306 19.0921 7.73823 18.7946 7.26101 18.443L5.42401 19.028C4.97601 19.1709 4.489 18.9823 4.25401 18.575L2.43001 15.424C2.1976 15.0165 2.27767 14.5025 2.62301 14.185L4.04801 12.885C3.98321 12.2961 3.98321 11.7019 4.04801 11.113L2.62301 9.816C2.27716 9.49837 2.19706 8.98372 2.43001 8.576L4.25001 5.423C4.485 5.0157 4.97201 4.82714 5.42001 4.97L7.25701 5.555C7.50107 5.37416 7.75514 5.20722 8.01801 5.055C8.27035 4.91269 8.53005 4.78385 8.79601 4.669L9.20401 2.787C9.30408 2.32797 9.7102 2.00049 10.18 2H13.82C14.2898 2.00049 14.6959 2.32797 14.796 2.787L15.208 4.67C15.4888 4.79352 15.7622 4.93308 16.027 5.088C16.2743 5.23078 16.5133 5.38736 16.743 5.557L18.581 4.972C19.0287 4.82967 19.5151 5.01816 19.75 5.425L21.57 8.578C21.8024 8.98548 21.7224 9.49951 21.377 9.817L19.952 11.117C20.0168 11.7059 20.0168 12.3001 19.952 12.889L21.377 14.189C21.7224 14.5065 21.8024 15.0205 21.57 15.428L19.75 18.581C19.5151 18.9878 19.0287 19.1763 18.581 19.034L16.743 18.449C16.5104 18.6203 16.2687 18.7789 16.019 18.924C15.7568 19.0759 15.4864 19.2131 15.209 19.335L14.796 21.214C14.6955 21.6726 14.2895 21.9996 13.82 22ZM11.996 8C9.78687 8 7.99601 9.79086 7.99601 12C7.99601 14.2091 9.78687 16 11.996 16C14.2051 16 15.996 14.2091 15.996 12C15.996 9.79086 14.2051 8 11.996 8Z" fill="#727B85"/>
+            </svg>
+            Поиск
+          </a>
+          <a href="#" class="flex link hover:text-blue focus:text-blue active:text-blue items-center uppercase font-medium flex-col gap-[8px] text-xs font-Manrope text-grey">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.82 22H10.18C9.71012 22 9.30357 21.673 9.20301 21.214L8.79601 19.33C8.25306 19.0921 7.73823 18.7946 7.26101 18.443L5.42401 19.028C4.97601 19.1709 4.489 18.9823 4.25401 18.575L2.43001 15.424C2.1976 15.0165 2.27767 14.5025 2.62301 14.185L4.04801 12.885C3.98321 12.2961 3.98321 11.7019 4.04801 11.113L2.62301 9.816C2.27716 9.49837 2.19706 8.98372 2.43001 8.576L4.25001 5.423C4.485 5.0157 4.97201 4.82714 5.42001 4.97L7.25701 5.555C7.50107 5.37416 7.75514 5.20722 8.01801 5.055C8.27035 4.91269 8.53005 4.78385 8.79601 4.669L9.20401 2.787C9.30408 2.32797 9.7102 2.00049 10.18 2H13.82C14.2898 2.00049 14.6959 2.32797 14.796 2.787L15.208 4.67C15.4888 4.79352 15.7622 4.93308 16.027 5.088C16.2743 5.23078 16.5133 5.38736 16.743 5.557L18.581 4.972C19.0287 4.82967 19.5151 5.01816 19.75 5.425L21.57 8.578C21.8024 8.98548 21.7224 9.49951 21.377 9.817L19.952 11.117C20.0168 11.7059 20.0168 12.3001 19.952 12.889L21.377 14.189C21.7224 14.5065 21.8024 15.0205 21.57 15.428L19.75 18.581C19.5151 18.9878 19.0287 19.1763 18.581 19.034L16.743 18.449C16.5104 18.6203 16.2687 18.7789 16.019 18.924C15.7568 19.0759 15.4864 19.2131 15.209 19.335L14.796 21.214C14.6955 21.6726 14.2895 21.9996 13.82 22ZM11.996 8C9.78687 8 7.99601 9.79086 7.99601 12C7.99601 14.2091 9.78687 16 11.996 16C14.2051 16 15.996 14.2091 15.996 12C15.996 9.79086 14.2051 8 11.996 8Z" fill="#727B85"/>
+            </svg>
+            Журнал
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- media_menu -->
+  </div>
+    <!-- swiper js -->
+    <script src="../src/js/swiper-bundle.min.js"></script>
+    <!-- main js -->
+    <script src="../src/js/main.js"></script>
+</body>
+</html>

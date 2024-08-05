@@ -14,6 +14,10 @@ body {
   @apply max-w-[1200px] mx-auto;
 }
 
+.favorites_container {
+  @apply max-w-[1816px] mx-auto;
+}
+
 .swiper-button-disabled {
   opacity: 0;
 }
@@ -77,6 +81,12 @@ body {
 
 @media only screen and (max-width: 1300px) {
   .container {
+    @apply max-w-full px-[20px]
+  }
+}
+
+@media only screen and (max-width: 1536px) {
+  .favorites_container {
     @apply max-w-full px-[20px]
   }
 }
