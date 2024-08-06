@@ -122,6 +122,49 @@ let swiper6 = new Swiper(".servicesSwiper", {
   },
 });
 
+let swiper7 = new Swiper(".commentoneSwiper", {
+  spaceBetween: 10,
+  slidesPerView: 4.20,
+  navigation: {
+    nextEl: ".comment-button-next",
+    prevEl: ".comment-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 8,
+    },
+    1024: {
+      slidesPerView: 11,
+    },
+    1440: {
+      slidesPerView: 11,
+    },
+  },
+});
+
+let swiper8 = new Swiper(".commenttwoSwiper", {
+  spaceBetween: 20,
+  slidesPerView: 1.20,
+  navigation: {
+    nextEl: ".commenttwo-button-next",
+    prevEl: ".commenttwo-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    993: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    1440: {
+      slidesPerView: 3,
+    },
+  },
+});
+
 var swiper3 = new Swiper(".favoritesSwiper", {
   pagination: {
     el: ".swiper-pagination",

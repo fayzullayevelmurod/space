@@ -21,6 +21,7 @@ module.exports = {
         'line-two': "#EAEAEA",
         'card-line': "#D6D6D6",
         'through-line': "#D6D6D6",
+        'comment-line': "#ECECEC"
       },
     },
   },
