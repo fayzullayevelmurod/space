@@ -89,6 +89,12 @@ body {
   background: rgba(46, 58, 89, 0.6);
 }
 
+.pink-shadow {
+  box-shadow: 3px 0px 33px -12px rgba(235,4,129,0.4);
+-webkit-box-shadow: 3px 0px 33px -12px rgba(235,4,129,0.4);
+-moz-box-shadow: 3px 0px 33px -12px rgba(235,4,129,0.4);
+}
+
 /* .max-h-0 {
 	max-height: 0;
 }
