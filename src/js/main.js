@@ -216,7 +216,6 @@ function init() {
   var location3 = [45.9, 38.31]; // Example coordinates
   var location4 = [46.9, 39.31]; // Example coordinates
 
-  // manzilini ko'rsatadiku pin qilib o'sha narsa yoziladigan joy
   var placemark1 = new ymaps.Placemark(
     location1,
     {},
@@ -252,8 +251,8 @@ function init() {
     {},
     {
       iconLayout: "default#image",
-      iconImageHref: "../../public/assets/images/icons/location3.svg", // rasim manzili
-      iconImageSize: [47, 72], // rasim qysayiz rasimni zazmeri
+      iconImageHref: "../../public/assets/images/icons/location4.svg", // rasim manzili
+      iconImageSize: [45, 62], // rasim qysayiz rasimni zazmeri
       iconImageOffset: [-15, -15], // rasimni joylashtirish yani positsiyasi
     }
   );
