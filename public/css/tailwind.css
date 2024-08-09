@@ -796,6 +796,10 @@ video {
   margin-top: 60px;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -2007,6 +2011,10 @@ body {
 
   .sm\:max-w-\[151px\] {
     max-width: 151px;
+  }
+
+  .sm\:max-w-\[231px\] {
+    max-width: 231px;
   }
 
   .sm\:scale-\[1\] {
