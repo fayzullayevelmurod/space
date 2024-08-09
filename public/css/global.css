@@ -22,6 +22,14 @@ body {
   opacity: 0;
 }
 
+.big-button-prev.swiper-button-disabled {
+  opacity: 1;
+}
+
+.big-button-next.swiper-button-disabled {
+  opacity: 1;
+}
+
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   border-radius: 100px !important;
 }
@@ -38,6 +46,25 @@ body {
   background-color: #fff;
   opacity: 1;
   margin: 0 !important;
+}
+
+.bigSwiper .swiper-pagination {
+  bottom: 15px;
+}
+
+.bigSwiper .swiper-pagination-bullet {
+  transition: .3s ease;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 1;
+  margin: 0 !important;
+}
+
+.bigSwiper .swiper-pagination-bullet-active {
+  width: 20px;
+  border-radius: 100px;
 }
 
 .heart.active .heartone {
@@ -95,21 +122,13 @@ body {
 -moz-box-shadow: 3px 0px 33px -12px rgba(235,4,129,0.4);
 }
 
-/* .max-h-0 {
-	max-height: 0;
-}
-
-.group:focus .group-focus\:max-h-40 {
-	max-height: 10rem;
-} */
-
 @media only screen and (max-width: 1300px) {
   .container {
     @apply max-w-full px-[20px]
   }
 }
 
-@media only screen and (max-width: 1536px) {
+@media only screen and (max-width: 1920px) {
   .favorites_container {
     @apply max-w-full px-[20px]
   }

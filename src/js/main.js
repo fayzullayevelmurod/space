@@ -28,11 +28,14 @@ let swiper = new Swiper(".homeSwiper", {
     },
     993: {
       slidesPerView: 5,
+      spaceBetween: 20,
     },
     1024: {
       slidesPerView: 5,
+      spaceBetween: 20,
     },
     1440: {
+      spaceBetween: 20,
       slidesPerView: 6,
     },
   },
@@ -165,11 +168,23 @@ let swiper8 = new Swiper(".commenttwoSwiper", {
   },
 });
 
-// var swiper3 = new Swiper(".favoritesSwiper", {
-//   pagination: {
-//     el: ".swiper-pagination",
-//   },
-// });
+let swiper9 = new Swiper(".bigSwiper", {
+  slidesPerView: 1,
+  navigation: {
+    nextEl: ".big-button-next",
+    prevEl: ".big-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
+var swiper3 = new Swiper(".favoritesSwiper", {
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 
 // document.querySelectorAll('.complexsSwiper').forEach((item, index) => {
 //   let swiper2 = new Swiper(item, {
@@ -198,70 +213,72 @@ let swiper8 = new Swiper(".commenttwoSwiper", {
 // })
 
 
-ymaps.ready(init);
+try {
+  ymaps.ready(init);
 
-function init() {
-  var myMap = new ymaps.Map("map", {
-    center: [44.895, 37.316],
-    zoom: 13,
-    controls: ["zoomControl", "fullscreenControl"],
-  });
+  function init() {
+    var myMap = new ymaps.Map("map", {
+      center: [44.895, 37.316],
+      zoom: 13,
+      controls: ["zoomControl", "fullscreenControl"],
+    });
 
-  myMap.setType("yandex#map");
-  myMap.geoObjects.options.set("preset", "islands#grayIcon");
+    myMap.setType("yandex#map");
+    myMap.geoObjects.options.set("preset", "islands#grayIcon");
 
-  // Define the coordinates of the locations
-  var location1 = [44.89, 37.32]; // Example coordinates
-  var location2 = [44.9, 37.31]; // Example coordinates
-  var location3 = [45.9, 38.31]; // Example coordinates
-  var location4 = [46.9, 39.31]; // Example coordinates
+    // Define the coordinates of the locations
+    var location1 = [44.89, 37.32]; // Example coordinates
+    var location2 = [44.9, 37.31]; // Example coordinates
+    var location3 = [45.9, 38.31]; // Example coordinates
+    var location4 = [46.9, 39.31]; // Example coordinates
 
-  var placemark1 = new ymaps.Placemark(
-    location1,
-    {},
-    {
-      iconLayout: "default#image",
-      iconImageHref: "../../public/assets/images/icons/location2.svg", // rasim manzili
-      iconImageSize: [218, 59], // rasim qysayiz rasimni zazmeri
-      iconImageOffset: [-15, -15], // rasimni joylashtirish yani positsiyasi
-    }
-  );
-  var placemark2 = new ymaps.Placemark(
-    location2,
-    {},
-    {
-      iconLayout: "default#image",
-      iconImageHref: "../../public/assets/images/icons/location1.svg", // rasim manzili
-      iconImageSize: [57, 82], // rasim qysayiz rasimni zazmeri
-      iconImageOffset: [-15, -15], // rasimni joylashtirish yani positsiyasi
-    }
-  );
-  var placemark3 = new ymaps.Placemark(
-    location3,
-    {},
-    {
-      iconLayout: "default#image",
-      iconImageHref: "../../public/assets/images/icons/location3.svg", // rasim manzili
-      iconImageSize: [47, 72], // rasim qysayiz rasimni zazmeri
-      iconImageOffset: [-15, -15], // rasimni joylashtirish yani positsiyasi
-    }
-  );
-  var placemark4 = new ymaps.Placemark(
-    location4,
-    {},
-    {
-      iconLayout: "default#image",
-      iconImageHref: "../../public/assets/images/icons/location4.svg", // rasim manzili
-      iconImageSize: [45, 62], // rasim qysayiz rasimni zazmeri
-      iconImageOffset: [-15, -15], // rasimni joylashtirish yani positsiyasi
-    }
-  );
+    var placemark1 = new ymaps.Placemark(
+      location1,
+      {},
+      {
+        iconLayout: "default#image",
+        iconImageHref: "../../public/assets/images/icons/location2.svg", // rasim manzili
+        iconImageSize: [218, 59], // rasim qysayiz rasimni zazmeri
+        iconImageOffset: [-15, -15], // rasimni joylashtirish yani positsiyasi
+      }
+    );
+    var placemark2 = new ymaps.Placemark(
+      location2,
+      {},
+      {
+        iconLayout: "default#image",
+        iconImageHref: "../../public/assets/images/icons/location1.svg", // rasim manzili
+        iconImageSize: [57, 82], // rasim qysayiz rasimni zazmeri
+        iconImageOffset: [-15, -15], // rasimni joylashtirish yani positsiyasi
+      }
+    );
+    var placemark3 = new ymaps.Placemark(
+      location3,
+      {},
+      {
+        iconLayout: "default#image",
+        iconImageHref: "../../public/assets/images/icons/location3.svg", // rasim manzili
+        iconImageSize: [47, 72], // rasim qysayiz rasimni zazmeri
+        iconImageOffset: [-15, -15], // rasimni joylashtirish yani positsiyasi
+      }
+    );
+    var placemark4 = new ymaps.Placemark(
+      location4,
+      {},
+      {
+        iconLayout: "default#image",
+        iconImageHref: "../../public/assets/images/icons/location4.svg", // rasim manzili
+        iconImageSize: [45, 62], // rasim qysayiz rasimni zazmeri
+        iconImageOffset: [-15, -15], // rasimni joylashtirish yani positsiyasi
+      }
+    );
 
-  // Yuqoridagi placemarkni add qilish hudi classlist.add day
-  myMap.geoObjects.add(placemark1);
-  myMap.geoObjects.add(placemark2);
-  myMap.geoObjects.add(placemark3);
-  myMap.geoObjects.add(placemark4);
+    // Yuqoridagi placemarkni add qilish hudi classlist.add day
+    myMap.geoObjects.add(placemark1);
+    myMap.geoObjects.add(placemark2);
+    myMap.geoObjects.add(placemark3);
+    myMap.geoObjects.add(placemark4);
+  }
+} catch(err) {
+  console.log(err);
 }
-
-

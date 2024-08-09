@@ -7,6 +7,7 @@ module.exports = {
         Ubuntu: ['"Ubuntu"'],
         Montserrat: ['"Montserrat"'],
         Manrope: ['"Manrope"'],
+        Euclid: ['"Euclid Circular A"'],
       },
       colors: {
         "blue": "#0059FD",
