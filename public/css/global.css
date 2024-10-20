@@ -39,7 +39,7 @@ body {
 }
 
 .favoritesSwiper .swiper-pagination-bullet {
-  transition: .3s ease;
+  transition: 0.3s ease;
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -53,7 +53,7 @@ body {
 }
 
 .bigSwiper .swiper-pagination-bullet {
-  transition: .3s ease;
+  transition: 0.3s ease;
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -89,13 +89,13 @@ body {
 }
 
 .link:hover > svg > path {
-  fill: #0059FD;
+  fill: #0059fd;
 }
 .link:focus > svg > path {
-  fill: #0059FD;
+  fill: #0059fd;
 }
 .link:active > svg > path {
-  fill: #0059FD;
+  fill: #0059fd;
 }
 
 .no-scrollbar {
@@ -117,21 +117,54 @@ body {
 }
 
 .btn-shadow {
-  box-shadow: 3px 0px 33px -12px rgba(235,4,129,0.4);
--webkit-box-shadow: 3px 0px 33px -12px rgba(235,4,129,0.4);
--moz-box-shadow: 3px 0px 33px -12px rgba(235,4,129,0.4);
+  box-shadow: 3px 0px 33px -12px rgba(235, 4, 129, 0.4);
+  -webkit-box-shadow: 3px 0px 33px -12px rgba(235, 4, 129, 0.4);
+  -moz-box-shadow: 3px 0px 33px -12px rgba(235, 4, 129, 0.4);
 }
 
 @media only screen and (max-width: 1300px) {
   .container {
-    @apply max-w-full px-[20px]
+    @apply max-w-full px-[20px];
   }
 }
 
 @media only screen and (max-width: 1920px) {
   .favorites_container {
-    @apply max-w-full px-[20px]
+    @apply max-w-full px-[20px];
+  }
+}
+@media screen and (max-width: 1024px) {
+  .meida-accordion-body {
+    @apply max-h-0 overflow-hidden duration-300 group-focus:max-h-[1000px];
   }
 }
 
+@media screen and (max-width: 768px) {
+  .shadow-btn {
+    background: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+  }
+  .media-more-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2e3a5999;
+    z-index: 0;
+    border-radius: 10px;
+  }
+}
 
+@media screen and (max-width: 480px) {
+  .bad-img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .bad-img {
+    width: 80px;
+  }
+}
